@@ -96,7 +96,9 @@ const Upload = () => {
   };
   return (
     <main className="bg-[url('/images/bg-main.svg')] bg-cover">
-      <Navbar />
+      <div className="px-4 md:px-20">
+        <Navbar />
+      </div>
 
       {/* {window.puter.ai.chat(<ChatMessage role="user" content="Hello, AI!" />) &&} */}
       <section className="main-section">
