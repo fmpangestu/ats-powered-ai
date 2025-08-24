@@ -52,7 +52,7 @@ const Resume = () => {
         <Link to="/" className="back-button">
           <img src="/icons/back.svg" alt="logo" className="w-2.5 h-2.5" />
           <span className="text-gray-800 text-sm font-semibold">
-            Back to Homepage
+            Kembali ke Homepage
           </span>
         </Link>
       </nav>
@@ -76,7 +76,7 @@ const Resume = () => {
               <Summary feedback={feedback} />
               <ATS
                 score={feedback.ATS.score || 0}
-                suggestions={feedback.ATS.suggestions || []}
+                suggestions={feedback.ATS.tips || []}
               />
               <Details feedback={feedback} />
             </div>
