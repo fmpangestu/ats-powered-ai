@@ -15,7 +15,6 @@ const Upload = () => {
   const [file, setFile] = useState<File | null>(null);
   const handleFileSelect = (file: File | null) => {
     setFile(file);
-    console.log("File sebelum convert:", file);
   };
 
   const handleAnalyze = async ({
@@ -79,7 +78,6 @@ const Upload = () => {
     data.feedback = JSON.parse(feedbackText);
     await kv.set(`resume:${uuid}`, JSON.stringify(data));
     setStatusText("Analysis complete, redirecting ...");
-    console.log("DATA", data);
     navigate(`/resume/${uuid}`);
   };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
